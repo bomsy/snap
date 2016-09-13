@@ -1,0 +1,30 @@
+{
+  "name": "snap",
+  "version": "1.0.0",
+  "description": "Time travel for dependency packages state",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bomsy/snap.git"
+  },
+  "keywords": [
+    "state",
+    "dependencies"
+  ],
+  "bin": {
+    "snap": "./bin/snap"
+  },
+  "author": "Hubert Boma Manilla <b4bomsy@gmail.com> (https://blog.bomsy.org/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bomsy/snap/issues"
+  },
+  "homepage": "https://github.com/bomsy/snap#readme",
+  "dependencies": {
+    "child-process-promise": "^2.1.3",
+    "commander": "^2.9.0"
+  }
+}
