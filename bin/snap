@@ -28,7 +28,6 @@ program
   .command('list')
   .alias('ls')
   .description('List all the snapshots')
-  .option('-t, --table', 'List snapshots in a table')
   .option('-f, --full', 'Full detailed list of snapshots')
 
 program.parse(process.argv);
