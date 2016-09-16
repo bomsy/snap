@@ -1,0 +1,16 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "App for testing out snap functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node /Users/hubertmanilla/Projects/snap/scripts/postinstall.js",
+    "postupdate": "node /Users/hubertmanilla/Projects/snap/scripts/postinstall.js"
+  },
+  "author": "Hubert Boma Manilla <b4bomsy@gmail.com> (https://blog.bomsy.org/)",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}

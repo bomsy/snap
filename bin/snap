@@ -1,4 +1,4 @@
-#!usr/bin/env node
+#!/usr/bin/env node
 
 var main = require('../index');
 var program = require('commander');
@@ -9,7 +9,15 @@ program
 
 program
   .command('run')
-  .description('Start getting snapshots')
+  .description('Start taking snapshots')
+
+program
+  .command('take')
+  .description('Take a snapshot')
+
+program
+  .command('stop')
+  .description('Stop taking snapshots and remove')
 
 program
   .command('install <snapshot>')
@@ -24,5 +32,9 @@ program
   .option('-f, --full', 'Full detailed list of snapshots')
 
 program.parse(process.argv);
+
+if (!program.args.length) {
+  program.help();
+}
 
 main(program);

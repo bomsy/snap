@@ -1,1 +1,3 @@
 node_modules
+example/testapp/.snapshots
+example/testapp/node_modules
