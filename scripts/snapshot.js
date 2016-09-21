@@ -28,7 +28,7 @@ exec('npm shrinkwrap')
     return fs.writeJsonAsync(config, configJson);
   })
   .then(function() {
-    console.log('done');
+    console.log('new snapshot created - # ' + timestamp);
   })
   .catch(function(err) {
     console.log(err);
