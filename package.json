@@ -1,14 +1,14 @@
 {
   "name": "trail",
   "version": "1.0.0",
-  "description": "Time travel for dependency packages state",
+  "description": "Manages the trail of dependency changes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bomsy/snap.git"
+    "url": "git+https://github.com/bomsy/trail.git"
   },
   "keywords": [
     "state",

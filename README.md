@@ -1,4 +1,4 @@
-# trail (under development)
+# trail
 Keeps and manages a trail of package dependency changes
 
 ## About
@@ -16,13 +16,12 @@ This works for both Yarn and npm5
 
   `npm install -g trail`
 
- Go to your project folder
+## Using trail
 
-  `trail init` to setup trail, start tracking and taking snapshots
+ In your project, run `trail init` to setup trail, start tracking and taking snapshots
 
 ## API
 
 ## How trail works
-
 
 ## Contribute
