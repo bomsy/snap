@@ -1,5 +1,5 @@
 {
-  "name": "snap",
+  "name": "trail",
   "version": "1.0.0",
   "description": "Time travel for dependency packages state",
   "main": "index.js",
@@ -15,14 +15,14 @@
     "dependencies"
   ],
   "bin": {
-    "snap": "./bin/snap"
+    "trail": "./bin/trail"
   },
   "author": "Hubert Boma Manilla <b4bomsy@gmail.com> (https://blog.bomsy.org/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bomsy/snap/issues"
+    "url": "https://github.com/bomsy/trail/issues"
   },
-  "homepage": "https://github.com/bomsy/snap#readme",
+  "homepage": "https://github.com/bomsy/trail#readme",
   "dependencies": {
     "bluebird": "^3.4.6",
     "chalk": "^1.1.3",
