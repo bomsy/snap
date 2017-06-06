@@ -1,7 +1,7 @@
 # trail
 Keeps and manages a trail of package dependency changes
 
-## About
+### About
 It takes a snapshot of the current state of all the dependency packages after an install or
 update of packages. This keeps a trail of dependency changes over time.
 
@@ -12,16 +12,16 @@ and easily find the culprit dependency.
 
 This works for both Yarn and npm5
 
-## Getting Started
+### Getting Started
 
   `npm install -g trail`
 
-## Using trail
+### Using trail
 
  In your project, run `trail init` to setup trail, start tracking and taking snapshots
 
-## API
+### API
 
-## How trail works
+### How trail works
 
-## Contribute
+### Contribute
