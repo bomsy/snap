@@ -1,2 +1,2 @@
-# snap
-Manages package dependencies state snapshots
+# Snap
+Manages npm package dependencies snapshots

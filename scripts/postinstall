@@ -1,0 +1,58 @@
+#!/usr/bin/env node
+
+// This is a npm hookfile that is the target of a symlink file
+// created in current working app node_module/.hooks/ directory.
+// This will get called on the postinstall lifecycle of each of
+// the dependency packages in the node_modules folder i.e. if
+// an npm install or npm update is initiated, postinstall will
+// be called for each of the dep packages installed.
+
+// Ideally we do not want to create snapshots on each postinstall
+// of the postinstall, but rather at the end of the install of
+// all the neccesary dep packages.
+
+var exec = require('child-process-promise').exec;
+var spawn = require('child-process-promise').spawn
+var Promise = require('bluebird');
+var fs = Promise.promisifyAll(require('fs-extra'));
+var chdir = require('chdir-promise');
+
+var swfile = 'npm-shrinkwrap.json';
+var dir = '.snapshots/';
+var config = dir + 'config.json'
+
+function timestampFile(filename, ts) {
+  var fname = filename.split('.');
+  fname[0] = fname[0] + '-' + ts;
+  return fname.join('.');
+}
+var timestamp = new Date().getTime();
+
+
+/*  chdir.to('../../')
+    .then(function() {
+      return exec('npm shrinkwrap');
+    })
+    .then(fs.ensureDirAsync(dir))
+    .then(function() {
+      return fs.moveAsync(swfile, dir + timestampFile(swfile, timestamp));
+    })
+    .then(function() {
+      return fs.readJsonAsync(config)
+    })
+    .then(function(configJson) {
+      if ((timestamp - Number(configJson.latest)) < 5000) {
+        var rmFile = timestampFile(swfile, configJson.latest);
+        fs.removeAsync(dir + rmFile)
+          .then(function() {})
+      }
+      configJson.previous = configJson.latest;
+      configJson.latest = timestamp;
+      return fs.writeJsonAsync(config, configJson);
+    })
+    .then(function() {
+
+    })
+    .catch(function(err) {
+      console.log(err);
+    });*/
